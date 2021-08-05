@@ -1,0 +1,60 @@
+<mat-menu #dashboardMenu="matMenu" [overlapTrigger]="false" class="dashboard-menu" xPosition="before">
+  <div class="dashboard-menu-title">Табло за управление</div>
+  <div class="box">
+    <div class="mat-xsmall box-title">Институции</div>
+    <div class="bg-selago box-content-wrapper">
+      <div class="box-content" (click)="$event.stopPropagation()">
+        <p class="nav-item mat-small">Управление на институции 1</p>
+        <p class="nav-item mat-small">Управление на институции 2</p>
+        <p class="nav-item mat-small">Управление на институции 3</p>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="btn-wrapper">
+        <a mat-button class="with-icon link-accent mat-xsmall" routerLink="/portal/institutions"
+          >Зареди всички <mat-icon>keyboard_arrow_right</mat-icon></a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="mat-xsmall box-title">Деца и ученици</div>
+    <div class="bg-selago box-content-wrapper">
+      <div class="box-content" (click)="$event.stopPropagation()">
+        <p class="nav-item mat-small">Управление на институции 1</p>
+        <p class="nav-item mat-small">Управление на институции 2</p>
+        <p class="nav-item mat-small">Управление на институции 2</p>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="btn-wrapper">
+        <a mat-button class="with-icon link-accent mat-xsmall" routerLink="/portal/students"
+          >Зареди всички <mat-icon>keyboard_arrow_right</mat-icon></a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="mat-xsmall box-title">Дневници</div>
+    <div class="bg-selago box-content-wrapper">
+      <div class="box-content" (click)="$event.stopPropagation()">
+        <p class="nav-item mat-small">Управление на институции 1</p>
+        <p class="nav-item mat-small">Управление на институции 2</p>
+        <p class="nav-item mat-small">Управление на институции 2</p>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="btn-wrapper">
+        <a mat-button class="with-icon link-accent mat-xsmall" routerLink="/portal/school-books"
+          >Зареди всички <mat-icon>keyboard_arrow_right</mat-icon></a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="link-to-dashboard">
+    <a mat-button class="with-icon mat-small" routerLink="/portal/dashboard"
+      >Към табло за управление <mat-icon>keyboard_arrow_right</mat-icon></a
+    >
+  </div>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="dashboardMenu" class="dashboard-menu-icon">
+  <mat-icon>view_module</mat-icon>
+</button>

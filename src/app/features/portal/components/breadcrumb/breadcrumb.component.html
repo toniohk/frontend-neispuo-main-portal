@@ -1,0 +1,17 @@
+<mat-toolbar class="breadcrumb-toolbar">
+  <mat-toolbar-row class="breadcrumb-toolbar-row">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1 col-xs-12">
+          <ol class="breadcrumb">
+            <li *ngFor="let breadcrumb of breadcrumbs">
+              <span [routerLink]="breadcrumb.url" routerLinkActive="active">
+                {{ breadcrumb.label }}
+              </span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

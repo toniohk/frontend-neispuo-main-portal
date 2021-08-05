@@ -1,0 +1,46 @@
+@import "./../../../../../neispuo-theme-styles/variables";
+
+.breadcrumb-toolbar {
+  background: $white;
+  margin-bottom: 30px;
+  &-row {
+    padding: 0;
+    .breadcrumb {
+      font-size: 0.75em;
+      font-weight: normal;
+      letter-spacing: 0.2px;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      span {
+        color: $silver;
+        cursor: pointer;
+        &:hover {
+          color: $gray;
+          text-decoration: none;
+        }
+        &:focus {
+          outline: 0;
+        }
+      }
+      li {
+        list-style: none;
+        margin: 5px;
+        &:last-child {
+          margin-right: 20px;
+        }
+        &::after {
+          content: "\\";
+          color: $silver;
+          margin-left: 5px;
+        }
+        &:last-child::after {
+          content: "";
+        }
+        &:not(:first-of-type) span.active {
+          color: $cornflower-blue;
+        }
+      }
+    }
+  }
+}

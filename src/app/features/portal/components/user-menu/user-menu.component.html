@@ -1,0 +1,17 @@
+<mat-menu #userMenu="matMenu" [overlapTrigger]="false" class="user-menu" xPosition="before">
+  <div class="user-info">
+    <div class="menu-avatar">KP</div>
+    <div>
+      <div class="mat-small user-name">Katerina Petrova</div>
+      <div class="mat-small user-email">katerina.ivanova.petrova@gmail.com</div>
+    </div>
+  </div>
+  <div class="btn-wrapper">
+    <button class="profile-btn" mat-raised-button color="primary">Профил</button>
+  </div>
+  <div>
+    <a mat-button class="with-icon mat-small sign-out-link" target="_blank">Изход <mat-icon>chevron_right</mat-icon></a>
+  </div>
+</mat-menu>
+
+<div class="avatar" [matMenuTriggerFor]="userMenu">KP</div>

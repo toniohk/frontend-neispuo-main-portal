@@ -1,0 +1,55 @@
+<div class="login-page container-fluid">
+  <div class="overlay-gradient"></div>
+  <div class="login-page-wrapper row">
+    <div class="left-col col-sm-12 col-md-5 offset-md-1 col-xl-4 offset-xl-2">
+      <div class="mon-logo">
+        <img src="/assets/images/mon.png" alt="mon-logo" />
+      </div>
+      <div class="page-title">
+        <strong>Вход към</strong>
+        <h1>НЕИСПУО</h1>
+      </div>
+    </div>
+    <div class="right-col col-sm-12 col-md-5 col-xl-4">
+      <mat-card>
+        <div class="form-wrapper">
+          <form [formGroup]="loginForm">
+            <div class="form-title">
+              <div class="mon-logo">
+                <img src="/assets/images/mon-logo.png" alt="" />
+              </div>
+              <h2>НЕИСПУО</h2>
+              <p>Влез в своя профил</p>
+            </div>
+            <div class="mat-field-wrapper">
+              <mat-form-field appearance="outline">
+                <mat-label>Имейл</mat-label>
+                <input matInput formControlName="email" />
+                <mat-error> Please enter a valid email address </mat-error>
+              </mat-form-field>
+            </div>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Парола</mat-label>
+              <input type="password" matInput formControlName="password" />
+              <mat-error> Please enter a valid email address </mat-error>
+            </mat-form-field>
+          </form>
+          <div class="login-actions">
+            <mat-checkbox color="primary"><span class="mat-small">Запомни ме</span></mat-checkbox>
+            <a mat-button class="mat-small" routerLink="#" target="_blank">Забравена парола?</a>
+          </div>
+          <div class="submit-btn-wrapper">
+            <button mat-raised-button color="primary" (click)="redirectToPortal()">Вход</button>
+            <div class="mat-small">
+              <span>Общи условия и правила. </span>
+              <a mat-button class="with-icon" routerLink="#" target="_blank"
+                >Научи повече <mat-icon>chevron_right</mat-icon></a
+              >
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

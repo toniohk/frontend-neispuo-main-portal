@@ -1,0 +1,96 @@
+.mat-radio-button {
+  .mat-radio-outer-circle {
+    border-color: $gray;
+    border-width: 1px !important;
+  }
+
+  &.mat-primary.mat-radio-disabled {
+    &.mat-radio-checked .mat-radio-outer-circle,
+    .mat-radio-outer-circle {
+      border-color: $primary;
+      opacity: 0.5;
+    }
+
+    .mat-radio-ripple .mat-ripple-element,
+    .mat-radio-inner-circle {
+      background-color: $primary;
+      opacity: 0.5;
+    }
+
+    .mat-radio-label-content {
+      opacity: 0.5;
+    }
+
+    .mat-radio-persistent-ripple {
+      width: auto;
+    }
+
+    &:not(.mat-radio-checked) {
+      .mat-radio-outer-circle,
+      .mat-radio-outer-circle {
+        border-color: $gray;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &.mat-accent.mat-radio-disabled {
+    &.mat-radio-checked .mat-radio-outer-circle,
+    .mat-radio-outer-circle {
+      border-color: $cornflower-blue;
+      opacity: 0.5;
+    }
+
+    .mat-radio-ripple .mat-ripple-element,
+    .mat-radio-inner-circle {
+      background-color: $cornflower-blue;
+      opacity: 0.5;
+    }
+
+    .mat-radio-label-content {
+      opacity: 0.5;
+    }
+
+    .mat-radio-persistent-ripple {
+      width: auto;
+    }
+
+    &:not(.mat-radio-checked) {
+      .mat-radio-outer-circle,
+      .mat-radio-outer-circle {
+        border-color: $gray;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &.mat-warn.mat-radio-disabled {
+    &.mat-radio-checked .mat-radio-outer-circle,
+    .mat-radio-outer-circle {
+      border-color: $red;
+      opacity: 0.5;
+    }
+
+    .mat-radio-ripple .mat-ripple-element,
+    .mat-radio-inner-circle {
+      background-color: $red;
+      opacity: 0.5;
+    }
+
+    .mat-radio-label-content {
+      opacity: 0.5;
+    }
+
+    .mat-radio-persistent-ripple {
+      width: auto;
+    }
+
+    &:not(.mat-radio-checked) {
+      .mat-radio-outer-circle,
+      .mat-radio-outer-circle {
+        border-color: $gray;
+        opacity: 0.5;
+      }
+    }
+  }
+}

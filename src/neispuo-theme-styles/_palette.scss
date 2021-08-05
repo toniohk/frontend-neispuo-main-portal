@@ -1,0 +1,236 @@
+// Override palette
+$mat-red: (
+  50: #fde4e5,
+  100: #f9bbbd,
+  200: #f68e92,
+  300: #f26166,
+  400: #ef3f45,
+  500: #ec1d24,
+  600: #ea1a20,
+  700: #e7151b,
+  800: #e41116,
+  900: #df0a0d,
+  A100: #ffffff,
+  A200: #ffd5d6,
+  A400: #ffa2a3,
+  A700: #ff898a,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  ),
+);
+
+$mat-blue: (
+  50: #eae8f3,
+  100: #cac6e2,
+  200: #a7a0cf,
+  300: #847abc,
+  400: #695ead,
+  500: #4f419f,
+  600: #483b97,
+  700: #3f328d,
+  800: #362a83,
+  900: #261c72,
+  A100: #b6aeff,
+  A200: #887bff,
+  A400: #5a48ff,
+  A700: #432fff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  ),
+);
+
+$mat-green: (
+  50: #e0f7f3,
+  100: #b3ebe1,
+  200: #80ddcd,
+  300: #4dcfb8,
+  400: #26c5a9,
+  500: #00bb9a,
+  600: #00b592,
+  700: #00ac88,
+  800: #00a47e,
+  900: #00966c,
+  A100: #c1ffeb,
+  A200: #8effdb,
+  A400: #5bffca,
+  A700: #41ffc2,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  ),
+);
+
+$mat-yellow: (
+  50: #fff6e0,
+  100: #ffe9b3,
+  200: #ffda80,
+  300: #ffcb4d,
+  400: #ffbf26,
+  500: #ffb400,
+  600: #ffad00,
+  700: #ffa400,
+  800: #ff9c00,
+  900: #ff8c00,
+  A100: #ffffff,
+  A200: #fff9f2,
+  A400: #ffdfbf,
+  A700: #ffd2a6,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $dark-primary-text,
+    700: $dark-primary-text,
+    800: $dark-primary-text,
+    900: $dark-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  ),
+);
+
+$mat-light-blue: (
+  50: #eeeffe,
+  100: #d5d6fd,
+  200: #babbfb,
+  300: #9e9ff9,
+  400: #898bf8,
+  500: #7476f7,
+  600: #6c6ef6,
+  700: #6163f5,
+  800: #5759f3,
+  900: #4446f1,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #dedeff,
+  A700: #c4c5ff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $light-primary-text,
+  ),
+);
+
+$mat-grey: (
+  50: #fafafa,
+  100: #f5f5f5,
+  200: #eeeeee,
+  300: #e0e0e0,
+  400: #bdbdbd,
+  500: #9e9e9e,
+  600: #757575,
+  700: #616161,
+  800: #8f8f8f,
+  900: #212121,
+  A100: #ffffff,
+  A200: #eeeeee,
+  A400: #bdbdbd,
+  A700: #616161,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $light-primary-text,
+  ),
+);
+
+// Custom background classes
+.bg-selago {
+  background-color: $selago;
+}
+
+.bg-thunder {
+  background-color: $thunder;
+}
+
+.bg-stratos {
+  background-color: $stratos;
+}
+
+.bg-lucky-point {
+  background-color: $lucky-point;
+}
+
+.bg-gigas {
+  background-color: $gigas;
+}
+
+.bg-cornflower-blue {
+  background-color: $cornflower-blue;
+}
+
+.overlay-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(25, 25, 112, 0.75), rgba(25, 25, 112, 0.75));
+}

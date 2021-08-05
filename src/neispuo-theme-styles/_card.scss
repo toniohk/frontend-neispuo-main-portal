@@ -1,0 +1,79 @@
+// Override mat-card-theme
+@mixin mat-card-theme($theme) {
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .mat-card {
+    background: $white;
+    color: $thunder;
+    padding: 0 !important;
+    border-radius: 4px !important;
+    &-header,
+    &-content,
+    &-actions,
+    &-footer {
+      padding: 0.5em 1em !important;
+    }
+
+    &-header {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+
+    &-actions,
+    &-footer {
+      margin: 0 !important;
+    }
+
+    &-footer {
+      color: $gray;
+      font-size: 0.85em;
+    }
+
+    &-title,
+    &-subtitle {
+      color: $white;
+    }
+
+    &-title {
+      margin-bottom: 0 !important;
+    }
+
+    &-subtitle {
+      margin-top: 0 !important;
+    }
+
+    &-header-text {
+      margin: 0 !important;
+    }
+  }
+
+  .mat-card-actions,
+  .mat-card-subtitle,
+  .mat-card-content {
+    display: block;
+    margin-bottom: 0 !important;
+  }
+}
+
+@mixin mat-card-typography($config) {
+  .mat-card {
+    font-family: mat-font-family($config);
+  }
+
+  .mat-card-title {
+    font: {
+      size: mat-font-size($config, headline);
+      weight: mat-font-weight($config, title);
+    }
+  }
+
+  .mat-card-header .mat-card-title {
+    font-size: mat-font-size($config, title);
+  }
+
+  .mat-card-subtitle,
+  .mat-card-content {
+    font-size: mat-font-size($config, body-1);
+  }
+}

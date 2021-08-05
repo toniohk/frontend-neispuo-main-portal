@@ -1,0 +1,65 @@
+<div class="portal">
+  <mat-toolbar class="portal-header">
+    <mat-toolbar-row class="portal-header--row">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-lg-1 row-flex">
+            <div class="row-left">
+              <button
+                class="sidenav-toggler"
+                type="button"
+                mat-icon-button
+                (click)="sidenav.toggle()"
+                fxShow="true"
+                fxHide.gt-sm
+                color="primary"
+              >
+                <mat-icon>menu</mat-icon>
+              </button>
+              <div class="logo">
+                <img class="mon-logo" src="/assets/images/mon-logo.png" alt="mon-logo" />
+                <span class="mat-title">НЕИСПУО</span>
+              </div>
+            </div>
+            <div class="row-right">
+              <app-dashboard-menu></app-dashboard-menu>
+              <app-user-menu></app-user-menu>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="portal-container">
+    <mat-sidenav
+      #sidenav
+      mode="{{ media.isActive('gt-sm') ? 'side' : 'over' }}"
+      opened="{{ media.isActive('gt-sm') ? true : false }}"
+      class="portal-sidenav"
+      [fixedInViewport]="true"
+      [fixedTopGap]="0"
+      [fixedBottomGap]="0"
+      [autoFocus]="false"
+    >
+      <mat-nav-list>
+        <a class="all" mat-list-item routerLink="/portal/dashboard" routerLinkActive="active" (click)="closeSidenav()"
+          >Табло за управление</a
+        >
+        <a mat-list-item routerLink="/portal/institutions" routerLinkActive="active" (click)="closeSidenav()">Институции</a>
+        <a mat-list-item routerLink="/portal/students" routerLinkActive="active" (click)="closeSidenav()">Деца и ученици</a>
+        <a mat-list-item routerLink="/portal/school-books" routerLinkActive="active" (click)="closeSidenav()">Дневници</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="portal-sidenav-content">
+      <app-breadcrumb></app-breadcrumb>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <mat-toolbar class="portal-footer">
+    <div class="mat-small">&copy; Министерство на образованието и науката</div>
+    <div class="mat-small">priemna@mon.bg тел.: 02 9217 760</div>
+  </mat-toolbar>
+</div>

@@ -1,0 +1,124 @@
+@import "./../../../neispuo-theme-styles/variables";
+
+:host ::ng-deep {
+  .mat-list-base .mat-list-item .mat-list-item-content,
+  .mat-list-base .mat-list-option .mat-list-item-content {
+    padding: 0 1em;
+  }
+}
+
+.portal {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  > * {
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  &-header {
+    height: 84px;
+    background: $stratos;
+    color: $white;
+    position: fixed;
+    z-index: 3;
+    &--row {
+      height: inherit;
+      padding: 0;
+      .row-flex {
+        display: flex;
+        justify-content: space-between;
+        .row-left {
+          display: flex;
+          .sidenav-toggler {
+            right: 1em;
+            .mat-icon {
+              font-size: 36px;
+              color: $white;
+            }
+          }
+          .logo {
+            display: flex;
+            align-items: center;
+            .mon-logo {
+              height: 32px;
+              width: auto;
+              margin-right: 0.75em;
+            }
+            @include respond-below(xs) {
+              .mat-title {
+                display: none;
+              }
+            }
+          }
+        }
+        .row-right {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    height: 84px;
+    border-top: 2px solid $concrete;
+    background-color: $white;
+    margin-top: auto;
+    z-index: 3;
+    justify-content: center;
+    flex-direction: column;
+    div:nth-of-type(2) {
+      font-weight: bold;
+    }
+  }
+
+  &-container {
+    background-color: $white;
+    margin-top: 84px;
+  }
+
+  &-sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin-top: 84px;
+    .mat-list-base {
+      padding-top: 40px;
+    }
+    .mat-list-item {
+      margin-left: 1em;
+      width: auto;
+      &.active {
+        font-weight: 400;
+        color: $cornflower-blue;
+      }
+      &.all {
+        font-weight: bold;
+        color: $stratos;
+      }
+      &.active::before {
+        content: "";
+        height: 2.5em;
+        width: 2px;
+        background-color: $cornflower-blue;
+        color: $cornflower-blue;
+        display: block;
+        position: absolute;
+        top: 0.25em;
+      }
+    }
+    &-content {
+      min-height: calc(100vh - 168px);
+      padding-top: 30px;
+    }
+  }
+
+  .mat-drawer {
+    &-side {
+      border-right: 0;
+    }
+  }
+}

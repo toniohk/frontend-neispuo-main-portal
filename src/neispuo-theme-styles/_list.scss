@@ -1,0 +1,47 @@
+@mixin mat-list-theme($theme) {
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .mat-list-base {
+    .mat-list-item {
+      color: $lucky-point;
+      font-size: 1em;
+    }
+  }
+
+  .mat-list-option,
+  .mat-nav-list .mat-list-item,
+  .mat-action-list .mat-list-item {
+    &:hover,
+    &:focus {
+      background: $selago;
+    }
+  }
+
+  .mat-list-single-selected-option {
+    &,
+    &:hover,
+    &:focus {
+      background: darken($selago, 10%);
+    }
+  }
+
+  .mat-list-item.active {
+    font-weight: 700;
+    color: $stratos;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+    &::before {
+      content: '';
+      height: 100%;
+      width: 2px;
+    }
+  }
+
+  .mat-ripple-element {
+    background-color: transparent;
+  }
+}

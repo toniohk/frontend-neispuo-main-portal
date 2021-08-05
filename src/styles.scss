@@ -1,0 +1,33 @@
+@import './neispuo-theme-styles/theme.scss';
+
+$neispuo-theme-primary: mat-palette($mat-blue);
+$neispuo-theme-accent: mat-palette($mat-light-blue);
+// The warn palette is optional (defaults to red).
+$neispuo-theme-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$neispuo-theme: mat-light-theme($neispuo-theme-primary, $neispuo-theme-accent, $neispuo-theme-warn);
+
+/** Include theme styles for core and each component used in your app.
+* Alternatively, you can import and @include the theme mixins for each component that you are using.
+*/
+@include angular-material-theme($neispuo-theme);
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: $thunder;
+}

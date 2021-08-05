@@ -1,0 +1,53 @@
+// Override mat-select-theme
+@mixin mat-select-theme($theme) {
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+
+  .mat-select-value {
+    color: $thunder;
+  }
+
+  .mat-select-placeholder {
+    color: $gray;
+  }
+
+  .mat-select-disabled .mat-select-value {
+    color: $silver;
+  }
+
+  .mat-select-arrow {
+    // color: $gray;
+    // &-wrapper {
+    //   vertical-align: inherit !important;
+    // }
+    visibility: hidden; // use mat-icon for arrow
+  }
+
+  .mat-select-panel {
+    background: mat-color($background, card);
+    @include _mat-theme-overridable-elevation(4, $theme);
+
+    .mat-option.mat-selected:not(.mat-option-multiple) {
+      background: $concrete;
+    }
+  }
+
+  .mat-form-field {
+    .mat-select.mat-select-disabled .mat-select-arrow {
+      color: $silver;
+    }
+
+    &-type-mat-select.mat-focused {
+      .mat-icon {
+        color: $cornflower-blue;
+      }
+    }
+  }
+
+  .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: $cornflower-blue;
+  }
+}

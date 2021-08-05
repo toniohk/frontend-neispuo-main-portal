@@ -1,0 +1,66 @@
+@import './../../../../../neispuo-theme-styles/variables';
+
+.dashboard-menu-title {
+  color: $gray;
+  margin-bottom: 0.5rem;
+}
+.dashboard-menu-icon {
+  margin-right: 0.75rem;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: $gigas;
+  }
+}
+
+.box-content-wrapper {
+  border-radius: 4px;
+  .btn-wrapper {
+    width: 100%;
+    text-align: right;
+    .link-accent {
+      font-weight: normal;
+      font-size: 0.75em;
+      color: $gray;
+      .mat-icon {
+        font-size: inherit;
+      }
+      &:hover {
+        color: $cornflower-blue;
+      }
+    }
+  }
+}
+
+.box {
+  margin-bottom: 1rem;
+  &-title {
+    color: $cornflower-blue;
+  }
+  &-content {
+    padding: 1rem;
+    .nav-item {
+      font-weight: bold;
+      &:focus {
+        outline: 0;
+      }
+      &:hover {
+        color: $lucky-point;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.link-to-dashboard {
+  text-align: right;
+  a {
+    padding: 0;
+    color: $lucky-point;
+  }
+}
